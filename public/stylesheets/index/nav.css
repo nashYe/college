@@ -1,0 +1,109 @@
+/*nav主要框架*/
+.wrap{
+    width:1000px;
+    margin:0 auto;
+    z-index:1;
+}
+/*标题样式*/
+.logo{
+    height: 51px;
+    background-color:#FFF;
+    border-left:1px solid #8E8E8E;
+    border-right:1px solid #8E8E8E;
+}
+.logo_left{
+    width:199px;
+    height:50px;
+    float:left;
+}
+.logo_right{
+    width:799px;
+    height:28px;
+    float:right;
+    line-height: 60px;
+    font-family: "Microsoft YaHei UI";
+    font-size: 18px;
+    color: #8E8E8E;
+}
+
+/*功能栏*/
+.wrap_mid{
+    /*width:1000px;*/
+    background-color: #8e8e8e;
+    /*margin-bottom: 2px;*/
+    /*height:42px;*/
+}
+.wrap_left,.wrap_right{
+    float:left;
+}
+.wrap_left{
+    width:750px;
+    height:45px;
+}
+.wrap_right{
+    width:250px;
+    height:45px;
+  background-color: #8e8e8e;
+}
+
+/*主要列表样式*/
+.wrap_mid ul li{
+    list-style-type: none;
+    width:250px;
+    height:45px;
+    float:left;
+    line-height: 43px;
+    text-align: center;
+    /*下拉列表样式*/
+    position: relative;
+}
+.wrap_mid ul li a {
+    width:250px;
+    height:45px;
+    display:block;
+    text-decoration:none;
+}
+/*!*测试*!*/
+/*.wrap_left li a:hover{*/
+    /*background-color: #c4cd36;*/
+/*}*/
+/*下拉列表样式*/
+.wrap_left ul li ul li {
+    float:none;
+}
+.wrap_left ul li ul{
+    position:absolute;
+    left:0;
+    top:45px;
+    display:none;
+}
+.wrap_left ul li:hover ul{
+    display:block;
+}
+
+
+
+.wrap_left a:link,.wrap_left a:visited{
+    text-decoration: none;
+    color:#000;
+    font-size:18px;
+    font-family:"Microsoft YaHei UI";
+}
+.wrap_left a:hover,.wrap_left a:active{
+    text-decoration:none;
+    color:#FFF;
+    font-size:18px;
+    font-family:"Microsoft YaHei UI";
+}
+.search_text
+{
+    width:150px;
+    /*height:25px;*/
+    background-color:#FFF ;
+    margin:15px 15px 10px 15px;
+    border:1px solid;
+}
+
+.wrap_left li {
+   background-color:#8E8E8E;
+}

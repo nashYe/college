@@ -1,0 +1,51 @@
+/*网站开头样式*/
+
+*{
+    font-size:15px;
+    padding:0;
+    margin:0;
+}
+body{
+    background-color: rgba(142, 142, 142, 0);
+}
+/*网站开头*/
+.top{
+    margin:0 auto;
+    width:100%;
+    height:40px;
+    background-color: rgba(142, 142, 142, 0.19);
+}
+.top_content{
+    width:1000px;
+    margin:0 auto;
+}
+/*登录注册样式*/
+.top_content li{
+    width:50px;
+    list-style-type: none;
+    font-size: 35px;
+    line-height:30px;
+    font-family: "Microsoft YaHei UI";
+    float:right;
+}
+
+.welcome{
+    width:90px;
+    list-style-type: none;
+    font-size: 32px;
+    line-height:29px;
+    font-family: "Microsoft YaHei UI";
+    float:right;
+    margin-right: 15px;
+}
+
+.top_content a:link,.top_content a:visited
+{
+    color:#8E8E8E;
+    text-decoration:none;
+}
+.top_content a:hover,.top_content a:active
+{
+    color: #000;;
+    text-decoration:none;
+}

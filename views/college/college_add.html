@@ -1,0 +1,146 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>高校迎新系统-新增公告</title>
+    <link href="/public/stylesheets/index.css" rel="stylesheet" type="text/css"/>
+    <link href="/public/stylesheets/bootstrap.css" rel="stylesheet" type="text/css"/>
+    <link href="/public/stylesheets/left.css" rel="stylesheet" type="text/css"/>
+    <link href="/public/stylesheets/bootstrap.css" rel="stylesheet" type="text/css"/>
+    <link href="/public/stylesheets/font-awesome.css" rel="stylesheet" type="text/css"/>
+	
+	<style>
+		h2{
+			position:relative;
+			left:400px;
+		}
+		.addCollege{
+			position:relative;
+			left:200px;
+		}
+		label{
+			width:120px;
+			height:20px;
+		}
+	</style>
+	
+</head>
+<body>
+
+
+<div >
+    <!--顶层-->
+    <div class="top">
+        <!--<img src="../img/title_0.png"/>-->
+        <div class="account_info">
+            <a><span >高校迎新管理员</span></a>
+            <a><span >mather</span></a>
+            <a href=""><span>退出登录</span></a>
+        </div>
+    </div>
+</div>
+
+<!--左边-->
+		<div class="left">
+			<ul class="menu">
+				<li>
+					<a href="#"><i class="icon-cogs icon-2x"></i>&nbsp&nbsp系统设置</a>
+					<ul>
+						<li><a href="/user">用户管理</a></li>
+						<li><a href="javascript:void(0)">权限设置</a></li>
+						<li><a href="javascript:void(0)">角色管理</a></li>
+						<li><a href="javascript:void(0)">数据备份</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#"><i class="icon-bar-chart icon-2x"></i>&nbsp&nbsp信息管理</strong></a>
+					<ul>
+						<li><a href="javascript:void(0)" target="main">公告管理</a>
+							<ul>
+								<li><a href="/announcement/add">发布公告</a></li>
+								<li><a href="/announcement">公告管理</a></li>
+							</ul>
+						</li>
+						<li><a href="function/vehicle-info-find.html" target="main">栏目管理</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#"><i class="icon-briefcase icon-2x"></i>&nbsp&nbsp资料管理</strong></a>
+					<ul>
+
+						<li><a href="javascript:void(0)">校区介绍</a></li>
+						<li><a href="javascript:void(0)">院系介绍</a>
+							<ul>
+								<li><a href="/college/add">新建校区</a></li>
+								<li><a href="/college/">查看校区</a></li>
+								<li><a href="/college/">修改|删除校区信息</a></li>
+							</ul>
+						</li>
+						<li><a href="javascript:void(0)">入学须知</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#"><i class="icon-wrench icon-2x"></i>&nbsp&nbsp新生指南</strong></a>
+					<ul>
+						<li><a href="javascript:void(0)">新生须知</a></li>
+						<li><a href="/grantLoan" >奖助贷信息</a></li>
+						<li><a href="javascript:void(0)">现场流程</a></li>
+						<li><a href="javascript:void(0)">收费标准</a></li>
+						<li><a href="javascript:void(0)">学校导航</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+<!--天气-->
+<div class="wea_time">
+    <a>2017年8月09日 星期一 天气：晴 今日通知：........</a>
+</div>
+<div class="right">
+    <!--// <iframe name="main" style="width:100%; min-height:700px;" scrolling="no" frameborder="0" border="0"></iframe>-->
+
+    <h2>新建学院</h2>
+    <form action="/college/add" method="post" class="addCollege">
+	
+		<label>id</label>
+		<input type="text" name="id" placeholder="请输入学院id"><br>
+		 
+        <label>学院名称</label>
+        <input type="text" name="name" placeholder="请输入学院名称"><br>
+		
+        <label class="col_intro">学院介绍</label>
+		<textarea name="introduce" placeholder="请输入学院介绍" rows="5" cols="80"></textarea><br>
+		
+        <label>现任院长</label>
+		<input type="text" name="dean" placeholder="请输入院长名称"><br>
+		
+        <label>现有专业数量</label>
+		<input type="text" name="pro_quantity" placeholder="请输入现有专业数量"><br>
+		
+        <label>现有教职工数量</label>
+        <input type="text" name="tea_quantity" placeholder="请输入现有教职工数量"><br>
+		
+        <label>学院位置</label>
+        <input type="text" name="position" placeholder="请输入学院位置"><br>
+		
+        <input class="btn btn-default" type="submit" value="新建"/>
+    </form>
+</div>
+
+<script src="/public/javascripts/jquery-1.9.1.js"></script>
+<script src="/public/javascripts/bootstrap.js"></script>
+<script src="/public/javascripts/angular.js"></script>
+<script src="/public/javascripts/college.js"></script>
+
+<script>
+    $(document).ready(function(){
+        $(".menu>li>a").click(function(e){
+            e.preventDefault();
+            $( this ).siblings("ul").slideToggle().parent("li").siblings().children("ul").slideUp();
+        });
+
+    });
+</script>
+
+</body>
+</html>

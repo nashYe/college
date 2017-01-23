@@ -1,0 +1,56 @@
+.container{
+	padding-top: 20px;
+}
+body{
+	border-top:1px dotted #369;
+	border-left:1px dotted #369;
+	border-right:1px dotted #369;
+}
+span{
+	margin-right: 10px;
+}
+
+a{
+	color: currentColor;
+}
+
+.table{
+	margin-top: 8px;
+}
+
+.form-horizontal{
+	margin-top: 20px;
+}
+
+.breadcrumb{
+	padding: 0;
+	margin-bottom: 0;
+	background-color: white;
+}
+
+.breadcrumb li.active{
+	color: #337AB7;
+}
+
+.dropdown{
+	margin-left: 10px;
+}
+
+/* Form */
+
+.form{
+	border: 1px solid #eee;
+	border-radius: 3px;
+}
+
+.checkbox-inline{
+	margin-right: 10px;
+}
+
+.control-label-content{
+	padding-top: 7px;
+}
+
+.nav-tabs{
+	margin-top: 12px;
+}

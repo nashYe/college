@@ -1,0 +1,93 @@
+/*健康资讯样式*/
+.main{
+    width:1000px;
+    height:260px;
+    margin:0 auto;
+}
+/*3个资讯的基本布局*/
+.news{
+   width:340px;
+}
+.activity{
+     width:410px;
+     margin:0 2px;
+ }
+.sidebar{
+    width:240px;
+}
+.news,.activity,.sidebar{
+    height:260px;
+    float:left;
+    border:1px solid #8E8E8E;
+}
+/*健康资讯的题目样式*/
+.title{
+    height:35px;
+    border-bottom:2px solid #e8e8e8;
+    background-color: #8E8E8E;
+}
+.title_left{
+    font-family: "Microsoft YaHei UI";
+    font-size:15px;
+    color:#000;
+    float:left;
+    line-height:35px;
+    padding-left:20px;
+}
+.title_right{
+    display:block;
+    float:right;
+    line-height: 35px;
+    padding-right: 20px;
+}
+.title_right a:link,.title_right a:hover{
+    text-decoration:none;
+    color:#999999;
+}
+.title_right a:active,.title_right a:visited{
+    color:#000000;
+}
+/*健康资讯的图片样式*/
+.pic_news {
+    margin-top:10px;
+    line-height:22px;
+}
+.pic_news img{
+    float:left;
+    margin:0 10px;
+}
+.pic_news a:link,.pic_news a:active{
+    color: #000;
+    text-decoration:none;
+    font-size:14px;
+}
+.pic_news a:visited,.pic_news a:hover{
+    color:#000000;
+}
+/*健康新闻列表样式*/
+.new_list{
+    margin-top:20px;
+    font-size:15px;
+}
+.new_list li{
+    list-style-type: none;
+    padding-left:15px;
+    margin:8px;
+    border-bottom:1px dotted #8E8E8E;
+}
+.new_list a:link,.new_list a:visited {
+    color: #005975;
+    text-decoration:none;
+    font-size:13px;
+}
+.new_list a:hover,.new_list a:active{
+    color: #000000;
+    text-decoration:none;
+    font-size:13px;
+}
+/*.date{*/
+    /*font-size:14px;*/
+    /*color: #333333;*/
+    /*float:right;*/
+/*}*/
+

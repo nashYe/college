@@ -1,0 +1,30 @@
+.copyright{
+    width:100%;
+    margin:0 auto;
+    height:130px;
+    background-color: rgba(142, 142, 142, 0.19);
+    margin-top:20px;
+}
+.copyright_content{
+    width:1000px;
+    margin:0 auto;
+}
+.copyright_content li{
+    list-style-type: none;
+    float:left;
+    width:200px;
+    text-align:center;
+    line-height:30px;
+    font-family:"Microsoft YaHei UI";
+}
+.copyright_content li a:link,.copyright_content li a:visited{
+    text-decoration:none;
+    color:#000 ;
+    font-size: 15px;
+}
+.copyright_content li a:active,.copyright_content li a:hover{
+    color:#fff;
+}
+.copyright_content li ul li a:link,.copyright_content li a:visited{
+    font-size: 5px;
+}

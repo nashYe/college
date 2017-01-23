@@ -1,0 +1,80 @@
+
+
+<div >
+	<!--顶层-->
+	<div class="top">
+		<!--<img src="../img/title_0.png"/>-->
+		<div class="account_info">
+			<a><span >高校迎新管理员</span></a>
+			<a><span >mather</span></a>
+			<a href=""><span>退出登录</span></a>
+		</div>
+	</div>
+</div>
+
+<!--左边-->
+<div class="left">
+	<ul class="menu">
+		<li>
+			<a href="#"><i class="icon-cogs icon-2x"></i>&nbsp&nbsp系统设置</a>
+			<ul>
+				<li><a href="/user">用户管理</a></li>
+				<li><a href="javascript:void(0)">权限设置</a></li>
+				<li><a href="javascript:void(0)">角色管理</a></li>
+				<li><a href="javascript:void(0)">数据备份</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="#"><i class="icon-bar-chart icon-2x"></i>&nbsp&nbsp信息管理</strong></a>
+			<ul>
+				<li><a href="javascript:void(0)" target="main">公告管理</a>
+					<ul>
+						<li><a href="/announcement/add">发布公告</a></li>
+						<li><a href="/announcement">公告管理</a></li>
+					</ul>
+				</li>
+				<li><a href="function/vehicle-info-find.html" target="main">栏目管理</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="#"><i class="icon-briefcase icon-2x"></i>&nbsp&nbsp资料管理</strong></a>
+			<ul>
+
+				<li><a href="javascript:void(0)">校区介绍</a></li>
+				<li><a href="javascript:void(0)">院系介绍</a>
+					<ul>
+						<li><a href="/college/add">新建校区</a></li>
+						<li><a href="/college/">查看校区</a></li>
+						<li><a href="/college/">修改|删除校区信息</a></li>
+					</ul>
+				</li>
+				<li><a href="javascript:void(0)">入学须知</a>
+				</li>
+			</ul>
+		</li>
+		<li>
+			<a href="#"><i class="icon-wrench icon-2x"></i>&nbsp&nbsp新生指南</strong></a>
+			<ul>
+				<li><a href="javascript:void(0)">新生须知</a></li>
+				<li><a href="/grantLoan" >奖助贷信息</a></li>
+				<li><a href="javascript:void(0)">现场流程</a></li>
+				<li><a href="javascript:void(0)">收费标准</a></li>
+				<li><a href="javascript:void(0)">学校导航</a></li>
+			</ul>
+		</li>
+	</ul>
+</div>
+<script src="/public/javascripts/bootstrap.js"></script>
+<script src="/public/javascripts/angular.js"></script>
+<script src="/public/javascripts/grantLoan.js"></script>
+<script src="/public/javascripts/jquery-1.9.1.js"></script>
+<script src="/public/javascripts/my_app.js"></script>
+<script>
+$(document).ready(function(){
+	$(".menu>li>a").click(function(e){
+		e.preventDefault();
+		$( this ).siblings("ul").slideToggle().parent("li").siblings().children("ul").slideUp();
+	});
+});
+</script>
+		

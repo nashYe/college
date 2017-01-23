@@ -1,0 +1,50 @@
+/*主页面顶层样式*/
+* {
+    margin: 0;
+    padding: 0;
+}
+.top{
+    width:100%;
+    height:60px;
+    background: url("/public/images/top.png") no-repeat ;
+    /*border-radius: 10px;*/
+}
+.top>h1{
+    margin:0;
+    padding:15px 0 0 20px;
+    font-family: "Microsoft YaHei UI";
+    color:#fff;
+}
+.top>a{
+    color:#000;
+    position: relative;
+    left:40%;
+    font-size: 18px;
+}
+.top>a:hover{
+    color:#fff;
+}
+/*天气样式*/
+.wea_time{
+    width:90%;
+    margin:3px 0 0 270px;
+    height:25px;
+}
+
+
+/*登录信息框*/
+
+.top>.account_info{
+    margin-left:80%;
+    padding-top:20px;
+    width:350px;
+    height:20px;
+    /*background-color: #fff;*/
+}
+.top>.account_info>a{
+    list-style-type: none;
+    color:#fff;
+    font-size:17px;
+}
+
+

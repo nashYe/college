@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		
+		<link href="/public/stylesheets/index.css" rel="stylesheet" type="text/css"/>
+		<link href="/public/stylesheets/bootstrap.css" rel="stylesheet" type="text/css"/>
+		<link href="/public/stylesheets/bootstrap.css" rel="stylesheet" type="text/css"/>
+		<link href="/public/stylesheets/font-awesome.css" rel="stylesheet" type="text/css"/>
+		<title>login</title>
+		<style>
+			.login{
+				position:relative;
+				left:500px;
+				top:160px;
+			}
+			label{
+				width:50px;
+				margin:20px 0 0 60px;
+			}
+			.but{
+				
+				margin:20px 0 0 100px;
+			}
+			.signup{
+				position:relative;
+				left:680px;
+				top:127px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="login">
+			<h3>华南农业大学迎新管理系统登录界面</h3>
+			<form method='POST' action='/login'>
+				<label>账号：</label>
+					<input type='text' name='username'><br>
+				<label>密码：</label>
+					<input type='password' name='password'><br>
+				<input type='submit' value='登录' class="but btn btn-default">
+			</form>
+		</div>
+		<a class="signup" href="/signup"><input  type='submit' value='注册' class="btn btn-default"></input></a>
+		
+		
+		
+    <script src="/public/javascripts/jquery-1.9.1.js"></script>
+    <script src="/public/javascripts/bootstrap.js"></script>
+    <script src="/public/javascripts/angular.js"></script>
+	</body>
+</html>
